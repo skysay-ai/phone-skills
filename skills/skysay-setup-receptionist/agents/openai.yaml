@@ -1,0 +1,4 @@
+interface:
+  display_name: "Set up a Skysay receptionist"
+  short_description: "Configure answering, routing and verified handoffs"
+  default_prompt: "Use $skysay-setup-receptionist to plan this business answering setup."

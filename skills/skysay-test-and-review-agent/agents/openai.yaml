@@ -1,0 +1,4 @@
+interface:
+  display_name: "Test and review a Skysay agent"
+  short_description: "Design simulations and assess conversation evidence"
+  default_prompt: "Use $skysay-test-and-review-agent to prepare a simulation suite."

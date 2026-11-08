@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skysay appointment reminders"
+  short_description: "Prepare bounded appointment confirmation campaigns"
+  default_prompt: "Use $skysay-appointment-reminders to draft this confirmation campaign."

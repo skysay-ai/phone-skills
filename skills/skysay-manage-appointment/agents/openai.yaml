@@ -1,0 +1,4 @@
+interface:
+  display_name: "Manage an appointment with Skysay"
+  short_description: "Book or change an appointment with clear limits"
+  default_prompt: "Use $skysay-manage-appointment to prepare this appointment change."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Set up and test a Skysay agent"
+  short_description: "Check readiness, configure and verify a voice agent"
+  default_prompt: "Use $skysay-setup-and-test-agent to prepare this voice agent."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Skysay calls"
+  short_description: "Review outcomes, commitments and evidence gaps"
+  default_prompt: "Use $skysay-call-review to audit these selected call IDs."

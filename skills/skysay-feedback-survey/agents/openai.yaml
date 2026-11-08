@@ -1,0 +1,4 @@
+interface:
+  display_name: "Collect feedback with Skysay"
+  short_description: "Ask approved questions and report actual responses"
+  default_prompt: "Use $skysay-feedback-survey to prepare this customer questionnaire."

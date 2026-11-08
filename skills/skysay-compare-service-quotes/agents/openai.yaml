@@ -1,0 +1,4 @@
+interface:
+  display_name: "Compare service quotes with Skysay"
+  short_description: "Collect comparable quotes from approved businesses"
+  default_prompt: "Use $skysay-compare-service-quotes to compare these service offers."

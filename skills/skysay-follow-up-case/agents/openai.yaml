@@ -1,0 +1,4 @@
+interface:
+  display_name: "Follow up a case with Skysay"
+  short_description: "Verify case progress and the next confirmed action"
+  default_prompt: "Use $skysay-follow-up-case to check this existing support case."

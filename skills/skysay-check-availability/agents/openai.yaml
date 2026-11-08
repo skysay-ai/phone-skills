@@ -1,0 +1,4 @@
+interface:
+  display_name: "Check availability with Skysay"
+  short_description: "Check exact stock, prices and pickup readiness"
+  default_prompt: "Use $skysay-check-availability to check this item at the chosen branch."
