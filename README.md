@@ -34,7 +34,7 @@ This repository contains 13 Agent Skills: instructions that compatible assistant
 Use a compatible skills installer:
 
 ```sh
-npx skills add skysay-ai/phone-skills
+npx skills add skysay-ai/phone-skills --skill '*'
 ```
 
 Select all 13 skills so shared instructions and specialty links are available. Their folders must remain siblings. A specialty stops if a required shared file is missing. For manual installation, copy every directory from `skills/` into your client's skill directory, preserving that layout. Start a new conversation if your client discovers skills only at startup.
