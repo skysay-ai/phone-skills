@@ -1,6 +1,6 @@
 ---
 name: skysay-phone
-description: Complete a user-authorized phone task through Skysay, such as an enquiry, appointment or reservation, and report the verified outcome. Also use for Skysay setup, number selection, SMS and checking existing calls.
+description: Complete a user-authorized phone task through Skysay, such as an enquiry, appointment or reservation, and report the verified outcome. Also use for connecting Skysay, choosing a caller number, sending SMS and checking existing calls.
 ---
 
 # Skysay phone

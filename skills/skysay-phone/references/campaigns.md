@@ -12,6 +12,8 @@ Provide each call with its own appointment, survey or other task facts using the
 
 Use a dedicated list or campaign when the requested population differs from an existing one. Record the IDs and reconcile uncertain creates/imports before repeating them. A second campaign is a new calling job, not an idempotent recovery mechanism.
 
+Treat an attached contact list as an immutable snapshot in this workflow. The exposed contact tools can add rows but do not provide an edit/delete path for correcting them. Do not append a correction beside a stale record. Build a new list from the corrected remaining population and a new draft pointing to that list, then verify the saved list ID. Leave a superseded draft unlaunched. For stale scheduled, paused or active work, stop future attempts using the supported cancellation path and verify its state before launching a replacement; do not resume the stale campaign. Reconcile queued, live, completed and uncertain attempts first, exclude attempts still unresolved, and preserve the original total attempt/cost limits across both campaigns. If those limits or cancellation cannot be established, return the blocker instead of launching the replacement.
+
 ## Save and launch
 
 Use `create_campaign` for a draft with the actual required project, agent, caller numbers, contact list, purpose and consent basis. The live schema also governs schedule, timezone behavior, windows, retries and concurrency. Pick values appropriate to the approved population and workspace limits. Do not copy a sales or collections retry preset into a reminder or feedback task without checking what it does.
@@ -24,6 +26,6 @@ Use `pause_campaign`, `resume_campaign` and `cancel_campaign` only for the selec
 
 Use campaign and call read tools to report progress, individual outcomes and evidence gaps. Follow pagination and state exactly which population was reviewed. Job completion, answered calls, confirmed appointments and completed surveys are separate counts.
 
-If a recipient opts out, stop further outreach to them in this program. Use the exposed `add_do_not_call` mechanism for a workspace-wide withdrawal and verify the result; do not silently expand a narrower request to every workspace campaign. If the needed scope of opt-out storage or enforcement is unavailable, pause affected future outreach and return the blocker to the owner before it can continue. Do not promise that later campaigns will honor a chat-only note.
+Follow the [shared opt-out rules](phone-tasks.md#opt-outs) for the selected campaign. Stop affected future attempts and verify the persisted restriction or report the enforcement blocker before further outreach.
 
 Calendar changes, CRM records and exported survey answers require their actual destination integration. Save or send them only as authorized, and verify the external response. Report a follow-up request separately when no write was made.

@@ -23,7 +23,7 @@ Read back the saved agent and number rules. Apply a caller-ID allowlist or inbou
 
 ## Qualify the requested path
 
-Use [agent testing](../skysay-test-and-review-agent/SKILL.md) for simulations if installed. A browser/trial test must follow the actual client-supported flow and returned state; it is not PSTN evidence.
+Use [agent testing](../skysay-test-and-review-agent/SKILL.md) for simulations if installed. Obtain authorization for a browser/trial test and its cost basis before starting it. Follow the actual client-supported flow and returned state; when using `create_trial_call`, respect its current `synthetic_only` requirement. Creating a trial record does not prove browser audio connected, and a browser/trial test is not PSTN evidence.
 
 For an approved outbound phone test, establish the exact recipient, brief and cost basis, then use the shared calling workflow once. Verify the received conversation or recording as permitted, the actual task response and clean termination. Number readiness alone cannot establish audible two-way speech.
 

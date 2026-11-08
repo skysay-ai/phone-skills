@@ -26,6 +26,6 @@ Establish the reminder timing, calling windows, finite retry limits, voicemail c
 
 ## Launch and reconcile
 
-Follow the shared list, draft, inspection, authorization and single-launch sequence. Use native scheduling; the chat does not keep a reminder program alive. If appointments change before launch, refresh the list and reread the draft. For scheduled or active work, use an existing verified synchronization mechanism, or pause/cancel affected outreach until the records are corrected.
+Follow the shared list, draft, inspection, authorization and single-launch sequence. Use native scheduling; the chat does not keep a reminder program alive. If appointment records change, follow the shared workflow's immutable-snapshot replacement: create a fresh corrected list and draft, confirm its list ID, and keep the stale draft unlaunched or verify cancellation of its future attempts. Do not append corrected records to the original list or resume a stale campaign. Reconcile earlier queued/live/uncertain calls before any replacement launch and preserve the original total attempt/cost limits.
 
 Observe actual campaign/call outcomes and honor opt-outs through the shared workflow. Report attempted, answered, confirmed, change-requested, unresolved and pending counts separately with their reviewed population. Preserve call and appointment references for authorized staff follow-up. Send confirmations or write the calendar only through the requested integrations and verify their results.

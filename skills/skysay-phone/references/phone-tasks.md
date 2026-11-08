@@ -98,3 +98,9 @@ A success estimate in `get_call_summary`, the agent's own claim or a completed c
 Calendar events, confirmation SMS, follow-up calls and saved templates are additional actions. Carry out only those the user authorized. A retry uses its own recorded attempt and follows the approved timing and attempt limit.
 
 An authorized retry after a settled call with an uncertain business outcome must reconcile any possible commitment before repeating it. Missing confirmation, a dropped call after speaking or a voicemail requesting action can still have created a reservation, order or other commitment. The follow-up brief must ask whether that action already happened and proceed only after its state is established. An uncertain creation response must first be reconciled under Submit once; a second enquiry call is not a workaround for an unresolved submission.
+
+## Opt-outs
+
+If a recipient declines future contact, end the conversation appropriately and stop further outreach to them in the requested scope. This restriction does not authorize a new unrelated task. Use an exposed `add_do_not_call` mechanism for a workspace-wide withdrawal and verify the saved result; do not silently expand a program-only withdrawal to every workspace campaign.
+
+If the requested scope cannot be stored or enforced by the available authorized tools, report the opt-out and that limitation to the owner and block further affected outreach. Pause the affected campaign when needed to prevent another attempt. Distinguish a verified saved restriction from a chat-only note; do not promise later campaigns will honor an unpersisted note. Apply these rules to individual calls as well as campaigns and surveys.
