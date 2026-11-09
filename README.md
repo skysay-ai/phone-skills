@@ -2,7 +2,7 @@
 
 Practical phone tasks and voice-agent operations, powered by [Skysay](https://skysay.ai).
 
-This repository contains 13 Agent Skills: instructions that compatible assistants can load when a task needs them. They use Skysay's hosted tools for calls, messages, configuration and results. The shared workflow handles authorization, duplicate prevention and evidence; each specialty adds its own task brief and success checks.
+This repository contains 13 Agent Skills: instructions that compatible assistants can load when a task needs them. They work with Agent Skills clients such as Grok Bot, Claude Code, Cursor, Codex, OpenClaw and Hermes Agent. They use Skysay's hosted tools for calls, messages, configuration and results. The shared workflow handles authorization, duplicate prevention and evidence; each specialty adds its own task brief and success checks.
 
 ## Skills
 
@@ -39,6 +39,8 @@ npx skills add skysay-ai/phone-skills --skill '*'
 
 Select all 13 skills so shared instructions and specialty links are available. Their folders must remain siblings. A specialty stops if a required shared file is missing. For manual installation, copy every directory from `skills/` into your client's skill directory, preserving that layout. Start a new conversation if your client discovers skills only at startup.
 
+**Grok Bot:** share this repository URL with your Grok Bot and ask it to install the phone skills. Then connect Skysay as below.
+
 Connect Skysay separately in your client's supported integrations settings:
 
 | Setting | Value |
@@ -58,9 +60,9 @@ The client needs access to the relevant tools. A read-only connection cannot pla
 - “Use skysay-test-and-review-agent to draft a test suite for this agent and preview its cost before running it.”
 - “Use skysay-call-review to review these call IDs and identify confirmed commitments and unresolved questions.”
 
-## Qualification and boundaries
+## Boundaries
 
-All 13 skill instructions are authored. Package validation and tool-contract checks are separate from model behavior, provider behavior and real phone-call qualification. **Live calls for this package have not been qualified.** A skill cannot add a capability missing from the connected service or client.
+A skill cannot add a capability missing from the connected service or client.
 
 Task approval is assistant behavior; OAuth consent and workspace controls do not verify approval of every task. Per-call briefs append to a saved agent prompt, so the selected agent must be compatible. Scheduled campaigns use Skysay's durable scheduling. Calendar/CRM writes and notifications after a chat ends require actual connected integrations or host automation.
 
