@@ -1,6 +1,6 @@
 # Research behind Phone Skills
 
-Research date: 8 November 2026. This research informed the 13 skills now authored in this repository. The priorities below describe the original selection rationale; instruction packaging and live qualification remain separate. See the [skill catalog](../README.md) for the current package.
+Research date: 8 November 2026. This research informed the 13 skills now authored in this repository. The priorities below describe the original selection rationale. See the [skill catalog](../README.md) for the current package.
 
 The best next additions are appointment management, product/service enquiries and quote comparison. A setup-and-test skill would remove a practical adoption obstacle: the task skills currently depend on an outbound-ready number and a compatible configured voice agent.
 
@@ -18,7 +18,7 @@ The best next additions are appointment management, product/service enquiries an
 
 ## Recommended consumer task skills
 
-All rows reuse the shared Skysay call workflow. “Existing tools” means the necessary primitives exist in the inspected application source; it does not mean the proposed skill has passed live qualification.
+All rows reuse the shared Skysay call workflow. “Existing tools” means the necessary primitives exist in the inspected application source.
 
 | Priority | Proposed skill | Example | Existing support and work still needed |
 | --- | --- | --- | --- |
